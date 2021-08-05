@@ -1,4 +1,11 @@
-# GoMikeDesigs
-GoMikeDesigs is a project that needs SEO and accessibility improvement 
+<html lang="en">
+<head></head>
+<body>
+<h1>GoMike Designs</h1>
+<p></p>
 
-The link to the webpage https://mihailtudos.github.io/GoMikeDesigs/
+<h2>Screenshot of Lighthouse Report before optimization:</h2>
+<br>
+
+
+</body>
