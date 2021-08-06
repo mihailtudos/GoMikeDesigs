@@ -1,3 +1,8 @@
+:root {
+    --safe-area-inset-left: 20px;
+    --safe-area-inset-right: 20px;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,6 +10,7 @@ body {
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    font-size: 16px;
 }
 
 a,
@@ -16,15 +22,6 @@ button {
 a:hover {
     text-decoration: none;
     cursor: pointer;
-}
-
-#page-loading-blocs-notifaction {
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    width: 100%;
-    z-index: 100000;
-    background: #FFFFFF url("img/pageload-spinner.gif") no-repeat center center;
 }
 
 .bloc {
@@ -281,10 +278,6 @@ a:hover {
 .row.row-no-gutters > [class*=" col-"] {
     padding-right: 0;
     padding-left: 0;
-}
-
-#bloc-2-services p {
-    font-size: 11px;
 }
 
 .navbar {
@@ -609,24 +602,34 @@ a[data-lightbox]:hover img {
 
 .next-lightbox,
 .prev-lightbox {
-    font-size: 20px;
+    font-size: 30px;
     color: rgba(255, 255, 255, .9);
-    background: rgba(0, 0, 0, .5);
+    background: rgba(0, 0, 0, 1);
     transition: all .2s ease-in-out;
     position: absolute;
     top: 45%;
     z-index: 1;
-    opacity: 0.4;
+    opacity: 0.7;
 }
 
 .next-lightbox {
-    padding: 6px 8px 1px 13px;
+    padding: 0 8px 1px 13px;
     right: 25px;
 }
 
+.next-lightbox::after {
+    content: ">";
+    color: white;
+}
+
 .prev-lightbox {
-    padding: 6px 13px 1px 10px;
+    padding: 0 12px 5px 13px;
     left: 25px;
+}
+
+.prev-lightbox::after {
+    content: "<";
+    color: white;
 }
 
 .snapshot-lb .modal-body {
@@ -666,6 +669,11 @@ a {
     font-size: 36px;
 }
 
+strong {
+    font-weight: bold;
+    color: black;
+}
+
 .statement-bloc-text {
     line-height: 26px;
     font-style: italic;
@@ -676,18 +684,9 @@ a {
     margin: auto auto auto auto;
 }
 
-p {
-    font-size: 12px;
-}
-
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto auto auto auto;
-}
-
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
 }
 
 .cta-hero {
@@ -704,30 +703,10 @@ p {
     margin: auto auto auto auto;
 }
 
-h2 {
-    font-size: 22px;
-    line-height: 1.4em;
-}
-
-h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
-}
-
 .med-width-whitespace {
     max-width: 800px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
-}
-
-h1 {
-    color: #333333!important;
-}
-
-h4 {
-    color: #333333!important;
 }
 
 .icons {
@@ -737,6 +716,50 @@ h4 {
 
 .white {
     color: #FFFFFF!important;
+}
+
+.lightbox-caption {
+    text-align: center;
+}
+
+#bloc-1-hero h3 {
+    line-height: 3.5rem;
+}
+
+#bloc-2-services h2 {
+    font-size: 3rem;
+    padding: 3rem;
+    text-align: center;
+}
+
+#bloc-3-what-i-do p {
+    font-size: 18px;
+}
+
+#bloc-4-portfolio h2 {
+    font-size: 4rem;
+    padding: 0 3rem 3rem 3rem;
+    text-align: center;
+    color: black !important;
+}
+
+.portfolio-row article {
+    margin-bottom: 5rem;
+}
+
+#bloc-4-portfolio img {
+    margin: auto;
+}
+
+#bloc-4-portfolio .bloc-lg {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+}
+
+#bloc-5-cta h2 {
+    line-height: 4rem;
+    color: white !important;
 }
 
 .portfolio-thumb {
@@ -760,6 +783,10 @@ h4 {
 .bold-link {
     font-weight: 900;
     text-decoration: underline!important;
+}
+
+h5.text-uppercase {
+    font-weight: bold;
 }
 
 .service-header {
@@ -833,7 +860,7 @@ h4 {
 }
 
 .bg-atlanta-20made-20sign-20orange {
-    background-image: url("img/atlanta%20made%20sign%20orange.jpg");
+    background-image: url("img/atlanta_made_sign_orange.webp");
 }
 
 @media (max-width: 1024px) {
@@ -884,8 +911,8 @@ h4 {
         position: relative;
     }
     .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
+        padding-left: var(--safe-area-inset-left);
+        padding-right: var(--safe-area-inset-right);
     }
     .bloc-group,
     .bloc-group .bloc {
@@ -895,8 +922,6 @@ h4 {
     .bloc-fill-screen .fill-bloc-top-edge,
     .bloc-fill-screen .fill-bloc-bottom-edge {
         padding: 0 20px;
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
     }
 }
 

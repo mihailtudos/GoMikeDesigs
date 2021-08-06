@@ -1,35 +1,62 @@
+<!--
+  issues:
+  missing lang tag,
+  missing title
+  description content could be improved
+  favicon should be a small fav icon not a picture
+  js scripts could be added at the end
+  maybe using cdns rather than local files
+  using minified versions of bootstrap js and css
+  missing robots file
+  using proper alt tags for images
+  namig accordingly pages, internal links and page files
+  only one h1 on the page
+  using proper styling rather than br elements
+  content is not appropriate
+  missing footer tag
+  using proper internal and external links
+  Image formats like JPEG 2000, JPEG XR, and WebP often provide better compression than PNG or JPEG, which means faster downloads and less data consumption - change bmp images - Optimized images load faster and consume less cellular data.
+  Serve images that are appropriately-sized to save cellular data and improve load time.
+  Resources are blocking the first paint of your page. Consider delivering critical JS/CSS inline and deferring all non-critical JS/styles.
+  Minifying JavaScript files can reduce payload sizes and script parse time
+  Reduce unused rules from stylesheets and defer CSS not used for above-the-fold content to decrease bytes consumed by network activity.
+  Reduce unused JavaScript and defer loading scripts until they are required to decrease bytes consumed by network activity.
+  A long cache lifetime can speed up repeat visits to your page.
+  Leverage the font-display CSS feature to ensure text is user-visible while webfonts are loading
+  Set an explicit width and height on image elements to reduce layout shifts and improve CLS.
+  Large network payloads cost users real money and are highly correlated with long load times
+  The Critical Request Chains below show you what resources are loaded with a high priority. Consider reducing the length of chains, reducing the download size of resources, or deferring the download of unnecessary resources to improve page load
+  To set budgets for the quantity and size of page resources, add a budget.json file.
+  missing focus from links, buttons, etc.
+  form missing lables linked to inputs
+ -->
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <link rel="shortcut icon" type="image/png" href="favicon.jpg">
-    
-	<link rel="styleshe		et" type="text/css" href="./css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/et-line@1.0.1/style.min.css">
+	<meta charset="utf-8">
+	<meta name="description" content="Based in Atlanta, GoMike Designs helps local businesses reach their goals through web and logo design.">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+	<link rel="shortcut icon" type="image/webp" href="favicon.jpg">
 
-    <title>Contacts | GoMike Designs</title>
-    
-<!-- Analytics -->
- 
-<!-- Analytics END -->
-    
+	<link rel="stylesheet preload" as="style" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet preload" as="style" type="text/css" href="style.css">
+	<link rel="stylesheet preload" as="style" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet preload" as="style" type="text/css" href="css/et-line.css">
+
+	<title>Contacts | GoMike Designs</title>
 </head>
 <body>
-<!-- Main container -->
-<div class="page-container">
-    
-<!-- bloc-0 -->
-<div class="bloc bgc-white l-bloc " id="bloc-0">
+<!-- HEADER START -->
+<header class="bloc bgc-white l-bloc " id="bloc-0">
 	<div class="container bloc-sm">
 		<nav class="navbar row">
 			<div class="navbar-header">
-				<a class="navbar-brand" href="index.html"><img src="img/atlanta%20web%20design%20logo.png"  height="40" /></a>
+				<a class="navbar-brand" href="index.html"><img src="img/atlanta_web_design_logo.png" alt="GoMike Design logo" width="268" height="50"></a>
 				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
@@ -38,129 +65,124 @@
 						<a href="index.html">Home</a>
 					</li>
 					<li>
-					</li>
-					<li>
-						<a href="contacts.html">page2</a>
+						<a href="contacts.html">Contacts</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
 	</div>
-</div>
-<!-- bloc-0 END -->
+</header>
+<!-- HEADER END -->
 
-<!-- bloc-6 -->
-<div class="bloc bg-dots-bg bg-repeat bgc-dark-slate-blue d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-12">
-				<p class="text-center hero-bloc-text tc-white">
-					Let&rsquo;s talk web design!
-				</p>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
-					I&rsquo;m super excited that you want to work together.<br>Please fill in the form below or get in touch so I can learn about your project <br>and we can setup time to &nbsp;talk websites and Atlanta city love.
-				</p>
+<!-- MAIN START -->
+<main class="page-container">
+	<!-- bloc-6 -->
+	<div class="bloc bg-dots-bg bg-repeat bgc-dark-slate-blue d-bloc bloc-bg-texture texture-paper" id="bloc-6">
+		<div class="container bloc-lg">
+			<div class="row">
+				<div class="col-sm-12">
+					<p class="text-center hero-bloc-text tc-white">
+						Let&rsquo;s talk web design!
+					</p>
+					<p class="text-center mg-lg tc-white tight-width-whitespace">
+						I&rsquo;m super excited that you want to work together.<br>Please fill in the form below or get in touch so I can learn about your project <br>and we can setup time to &nbsp;talk websites and Atlanta city love.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- bloc-6 END -->
+	<!-- bloc-6 END -->
 
-<!-- bloc-7 -->
-<div class="bloc bgc-white l-bloc" id="bloc-7">
-	<div class="container bloc-lg">
-		<div class="row">
-			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
-							Name
-						</label>
-						<input id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							How did you find me?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
-							Project brief (Please be as detailed as possible including your company goals and any improvements you&rsquo;d like to have over your current website)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Let's go Mike
-					</button>
-				</form>
-			</div>
-			<div class="col-sm-6">
-				<p>
-					mike@gomikedesigns.com<br>+1 (404) 555-1234<br> <br>123 Peachtree Ave. Atlanta, GA<br>Available 9am–5pm, Mon-Fri <br> <br>Interested to learn about my freelace services? <br>Please visit my&nbsp;<a class="ltc-atomic-tangerine" href="index.html">other page</a>.
-				</p>
+	<!-- bloc-7 -->
+	<div class="bloc bgc-white l-bloc" id="bloc-7">
+		<div class="container bloc-lg">
+			<div class="row">
+				<div class="col-sm-6">
+					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+						<div class="form-group">
+							<label>
+								Name
+							</label>
+							<input id="name" class="form-control" required />
+						</div>
+						<div class="form-group">
+							<label>
+								Email
+							</label>
+							<input id="email" class="form-control" type="email" required />
+						</div>
+						<div class="form-group">
+							<label>
+								How did you find me?
+							</label>
+							<input class="form-control" type="email" required id="input_504" />
+						</div>
+						<div class="form-group">
+							<label>
+								Project brief (Please be as detailed as possible including your company goals and any improvements you&rsquo;d like to have over your current website)<br>
+							</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</div>
+						<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+							Let's go Mike
+						</button>
+					</form>
+				</div>
+				<div class="col-sm-6">
+					<p>
+						mike@gomikedesigns.com<br>+1 (404) 555-1234<br> <br>123 Peachtree Ave. Atlanta, GA<br>Available 9am–5pm, Mon-Fri <br> <br>Interested to learn about my freelace services? <br>Please visit my&nbsp;<a class="ltc-atomic-tangerine" href="index.html">other page</a>.
+					</p>
+				</div>
 			</div>
 		</div>
 	</div>
-</div>
-<!-- bloc-7 END -->
+	<!-- bloc-7 END -->
 
-<!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
-<!-- ScrollToTop Button END-->
-
-
-<!-- Footer - bloc-8 -->
-<div class="bloc bgc-dark-slate-blue d-bloc" id="bloc-8">
+	<!-- ScrollToTop Button -->
+	<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+	<!-- ScrollToTop Button END-->
+</main>
+<!-- Footer - bloc-6 -->
+<footer class="bloc bgc-dark-slate-blue d-bloc" id="bloc-6">
 	<div class="container bloc-sm">
 		<div class="row">
 			<div class="col-sm-12">
-				<p class="text-center white">
-					GoMike Designs - Web designer living and loving Atlanta.<br>
-				</p>
+				<p class="text-center tc-white ">GoMike Designs - Web designer living and loving Atlanta.</p>
 				<div class="row row-no-gutters social">
-					<div class="col-sm-3">
+					<div class="col-xs-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-twitter icon-md"></span></a>
+							<a aria-label="twitter" class="social" href="https://twitter.com/"><span class="fa fa-twitter icon-md"></span></a>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-facebook icon-md"></span></a>
+							<a aria-label="facebook" class="social" href="https://www.facebook.com/"><span class="fa fa-facebook icon-md"></span></a>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-dribbble icon-md"></span></a>
+							<a aria-label="dribbble" class="social" href="https://dribbble.com/"><span class="fa fa-dribbble icon-md"></span></a>
 						</div>
 					</div>
-					<div class="col-sm-3">
+					<div class="col-xs-3">
 						<div class="text-center">
-							<a class="social" href="index.html"><span class="fa fa-instagram icon-md"></span></a>
+							<a aria-label="instagram" class="social" href="https://www.instagram.com/"><span class="fa fa-instagram icon-md"></span></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
-</div>
+</footer>
 <!-- Footer - bloc-8 END -->
+<!-- MAIN END -->
 
-</div>
-<!-- Main container END -->
+	<!--Scripts-->
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script defer src="js/jquery-2.1.0.min.js"></script>
+	<script defer src="js/bootstrap.min.js"></script>
+	<script defer src="js/blocs.min.js"></script>
+	<script defer src="js/jquery.touchSwipe.min.js"></script>
+	<script defer src="js/gmaps.min.js"></script>
 
-<!--Scripts-->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script defer src="js/jquery-2.1.0.min.js"></script>
-<script defer src="js/bootstrap.min.js"></script>
-<script defer src="js/blocs.min.js"></script>
-<script defer src="js/jquery.touchSwipe.min.js"></script>
-<script defer src="js/gmaps.min.js"></script>
-
-</body>
+	</body>
 </html>
