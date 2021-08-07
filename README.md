@@ -16,4 +16,10 @@
 <br />
 <img src="https://raw.githubusercontent.com/mihailtudos/GoMikeDesigs/main/img/gomike_mobile_report_before_optimization.png" title="Lighthouse report of the mobile version of GoMike Designs website"/>
 <br />
+<h3>Lighthouse report of desktop version of GoMike website after optimization:</h3>
+<br />
+<img src="https://raw.githubusercontent.com/mihailtudos/GoMikeDesigs/main/img/gomike_report_after_optimization.png" title="Lighthouse report of the mobile version of GoMike Designs website"/>
+<br />
+<img src="https://raw.githubusercontent.com/mihailtudos/GoMikeDesigs/main/img/gomike_report_after_contacts_optimization.png" title="Lighthouse report of the mobile version of GoMike Designs website"/>
+<br />
 </body>
