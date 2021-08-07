@@ -87,8 +87,12 @@ a:hover {
     right: 0;
 }
 
+img{
+    object-fit: contain;
+}
+
 .texture-paper::before {
-    background: url("img/texture-paper.png");
+    background: url("img/texture_paper.webp");
     background-size: 280px 280px;
 }
 
@@ -295,7 +299,6 @@ a:hover {
 }
 
 .navbar-brand img {
-    max-height: 200px;
     margin: 0 5px 0 0;
     display: inline;
 }
@@ -849,11 +852,11 @@ h3.text-uppercase {
 }
 
 .bg-dots-bg {
-    background-image: url("img/dots-bg.png");
+    background-image: url("img/dots_bg.webp");
 }
 
 .bg-lines-h2-bg {
-    background-image: url("img/lines-h2-bg.png");
+    background-image: url("img/lines_h2_bg.webp");
 }
 
 .bg-atlanta-20made-20sign {
@@ -1003,10 +1006,7 @@ h3.text-uppercase {
         -webkit-box-shadow: none;
         box-shadow: none;
     }
-    .navbar-brand img {
-        max-height: 40px;
-        width: auto;
-    }
+
     .nav-invert .navbar-header {
         float: none;
         width: 100%;
