@@ -813,12 +813,12 @@ h5.text-uppercase {
 
 .btn-atomic-tangerine {
     background: #F3976C;
-    color: #FFFFFF!important;
+    color: #000!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: rgba(243, 151, 108, 0.89) !important;
+    color: #000!important;
 }
 
 .ltc-white {
@@ -831,6 +831,10 @@ h5.text-uppercase {
 
 .ltc-atomic-tangerine {
     color: #F3976C!important;
+}
+
+.review {
+    color: black;
 }
 
 .ltc-atomic-tangerine:hover {
