@@ -785,8 +785,9 @@ strong {
     text-decoration: underline!important;
 }
 
-h5.text-uppercase {
+h3.text-uppercase {
     font-weight: bold;
+    font-size: 16px;
 }
 
 .service-header {
