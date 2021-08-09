@@ -1,7 +1,5 @@
 <html lang="en">
-<head>
-    <title>GoMike Designs report</title>
-</head>
+
 <body>
 
 <h1>GoMike Designs</h1>
