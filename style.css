@@ -13,6 +13,10 @@ body {
     font-size: 16px;
 }
 
+.modal-dialog img {
+    padding: 3rem;
+}
+
 a,
 button {
     transition: all .3s ease-in-out;
@@ -1102,4 +1106,5 @@ h3.text-uppercase {
     .bloc-mob-center-text {
         text-align: center;
     }
+
 }
